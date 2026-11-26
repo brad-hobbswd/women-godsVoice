@@ -554,3 +554,9 @@
 @media(max-width:1100px) and (orientation:landscape){
   body .welcome-inner{transform:translateY(-8px)!important;}
 }
+
+
+/* Raise the purple transition background in tablet landscape */
+@media(max-width:1100px) and (orientation:landscape){
+  body .hero-transition-overlay{bottom:-210px!important;}
+}
