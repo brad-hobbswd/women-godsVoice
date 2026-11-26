@@ -111,3 +111,12 @@
  .journey{padding:2rem .75rem 2.5rem!important;}
  .week-grid{grid-template-columns:1fr!important;}
 }
+
+/* Tablet portrait: reveal hero title above the overlapping landscape */
+@media(min-width:561px) and (max-width:1100px){
+ .hero-transition-overlay{bottom:-70px!important;width:100%!important;}
+ .hero-actions-strip{bottom:clamp(105px,15vw,170px)!important;}
+}
+@media(max-width:560px){
+ .hero-transition-overlay{bottom:-38px!important;}
+}
