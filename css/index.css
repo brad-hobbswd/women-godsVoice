@@ -139,3 +139,17 @@
 @media(max-width:1100px){
  .welcome{background:transparent!important;}
 }
+
+/* Definitive tablet/mobile correction */
+@media(max-width:1100px){
+ body .hero + section.welcome,
+ body main > section.welcome# welcome {background:transparent!important;}
+ body main > section.welcome{background:transparent!important;background-color:transparent!important;}
+}
+@media(min-width:561px) and (max-width:1100px){
+ body main > section.welcome{background:none!important;background-color:transparent!important;}
+ body main > section.welcome::before,
+ body main > section.welcome::after{display:none!important;content:none!important;}
+ body main > section.welcome .welcome-inner{background:transparent!important;box-shadow:none!important;border:0!important;}
+ body main > section.hero .hero-actions-strip{background:rgba(43,13,34,.72)!important;border:1px solid rgba(225,185,103,.45)!important;box-shadow:0 5px 16px rgba(35,12,25,.35)!important;padding:.55rem .7rem!important;border-radius:10px!important;}
+}
