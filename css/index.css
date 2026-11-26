@@ -442,3 +442,9 @@
 .section-transition-divider{transform:translateY(-42px)!important;margin-top:0!important;background:transparent!important;background-color:transparent!important;}
 @media(max-width:800px){.section-transition-divider{transform:translateY(-34px)!important;}}
 @media(max-width:560px){.section-transition-divider{transform:translateY(-26px)!important;}}
+
+
+/* Lower the gold divider farther beneath the welcome copy */
+.section-transition-divider{transform:translateY(24px)!important;}
+@media(max-width:800px){.section-transition-divider{transform:translateY(20px)!important;}}
+@media(max-width:560px){.section-transition-divider{transform:translateY(16px)!important;}}
