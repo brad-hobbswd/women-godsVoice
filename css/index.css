@@ -35,7 +35,7 @@
 .welcome::before,.welcome::after{content:none!important;display:none!important;}
 .welcome-inner{position:absolute!important;top:clamp(95px,13vw,165px)!important;left:0!important;right:0!important;z-index:11!important;max-width:900px;margin:0 auto;text-align:center;padding:0 1.5rem!important;}
 .welcome .section-kicker,.welcome h2,.welcome p{text-shadow:0 1px 8px rgba(255,248,235,.8);}
-.journey{position:relative;z-index:2!important;background:linear-gradient(145deg,#2b1426,#4b2943 55%,#301729)!important;margin:0!important;padding:clamp(390px,43vw,520px) 1.5rem 4rem!important;}
+.journey{position:relative;z-index:2!important;margin:0!important;padding:clamp(390px,43vw,520px) 1.5rem 4rem!important;}
 @media(max-width:800px){
 .hero-transition-overlay{top:calc(100% - 230px)!important;width:100%!important;}
 .welcome-inner{top:clamp(80px,18vw,125px)!important;padding:0 1.2rem!important;}
