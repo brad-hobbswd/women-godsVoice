@@ -46,5 +46,10 @@
 .welcome-inner{top:78px!important;padding:0 1rem!important;}
 .journey{padding:260px 1rem 2.5rem!important;}
 }
-/* Restore the gold accent separator at the hero-overlay-to-Journey seam */
-.journey{border-top:1px solid var(--gold-light)!important;}
+/* Independent decorative divider between the hero transition and Journey section */
+.section-transition-divider{position:absolute!important;left:50%!important;top:calc(100% + 300px)!important;transform:translateX(-50%)!important;width:min(78%,520px)!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:1rem!important;z-index:12!important;color:var(--gold-light)!important;font-size:1.25rem!important;line-height:1!important;pointer-events:none!important;}
+.section-transition-divider::before,.section-transition-divider::after{content:""!important;display:block!important;flex:1!important;height:1px!important;background:linear-gradient(90deg,transparent,var(--gold-light))!important;}
+.section-transition-divider::after{transform:scaleX(-1)!important;}
+.journey{border-top:0!important;}
+@media(max-width:800px){.section-transition-divider{top:calc(100% + 230px)!important;width:82%!important;}}
+@media(max-width:560px){.section-transition-divider{top:calc(100% + 180px)!important;width:86%!important;font-size:1rem!important;gap:.65rem!important;}}
