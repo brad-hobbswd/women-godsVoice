@@ -156,3 +156,33 @@
 
 /* Force remove welcome panel: inline style is also applied to the section */
 @media (max-width:1100px){#welcome{background:transparent!important;background-color:transparent!important;box-shadow:none!important;border:none!important;}}
+
+
+/* FINAL tablet/mobile transition fix: transparent welcome overlay, no cream body panel */
+@media(max-width:1100px){
+ body{background:var(--plum)!important;}
+ .hero{position:relative!important;overflow:visible!important;z-index:3!important;}
+ .hero-banner{position:relative!important;z-index:1!important;}
+ .hero-transition-overlay{position:absolute!important;left:0!important;right:0!important;top:auto!important;bottom:-1px!important;width:100%!important;height:auto!important;z-index:4!important;pointer-events:none!important;}
+ .hero-actions-strip{z-index:6!important;}
+ .welcome{position:absolute!important;top:100%!important;left:0!important;width:100%!important;height:0!important;margin:0!important;padding:0!important;background:transparent!important;background-color:transparent!important;box-shadow:none!important;border:0!important;overflow:visible!important;z-index:7!important;}
+ .welcome::before,.welcome::after{content:none!important;display:none!important;}
+ .welcome-inner{position:absolute!important;top:clamp(70px,11vw,120px)!important;left:0!important;right:0!important;max-width:900px!important;margin:0 auto!important;padding:0 1.25rem!important;text-align:center!important;background:transparent!important;box-shadow:none!important;border:0!important;z-index:8!important;}
+ .welcome .section-kicker,.welcome h2,.welcome p{position:relative!important;text-shadow:0 2px 8px rgba(255,248,235,.88)!important;}
+ .welcome h2{font-size:clamp(1.9rem,4.2vw,2.8rem)!important;margin:.45rem 0 .65rem!important;}
+ .welcome p{font-size:clamp(.88rem,1.6vw,1rem)!important;line-height:1.5!important;}
+ .journey{position:relative!important;z-index:2!important;margin:0!important;padding:clamp(260px,30vw,360px) 1rem 3rem!important;border-top:0!important;}
+ .section-transition-divider{position:absolute!important;left:50%!important;top:calc(100% + clamp(210px,25vw,300px))!important;transform:translateX(-50%)!important;width:98%!important;margin:0!important;z-index:9!important;}
+}
+@media(max-width:800px){
+ .welcome-inner{top:clamp(65px,12vw,95px)!important;padding:0 1rem!important;}
+ .journey{padding-top:280px!important;}
+ .section-transition-divider{top:calc(100% + 245px)!important;}
+}
+@media(max-width:560px){
+ .welcome-inner{top:58px!important;padding:0 .85rem!important;}
+ .welcome h2{font-size:clamp(1.75rem,7.2vw,2.35rem)!important;}
+ .welcome p{font-size:.84rem!important;line-height:1.45!important;}
+ .journey{padding:220px .75rem 2.5rem!important;}
+ .section-transition-divider{top:calc(100% + 190px)!important;}
+}
