@@ -88,3 +88,26 @@
  .welcome-inner{z-index:40!important;}
  .welcome .section-kicker,.welcome h2,.welcome p{position:relative!important;z-index:41!important;text-shadow:0 2px 10px rgba(255,248,235,.96),0 0 18px rgba(255,248,235,.9)!important;}
 }
+
+/* Tablet/mobile: restore the welcome copy to document flow to prevent overlap */
+@media(max-width:1100px){
+ .hero{overflow:hidden!important;z-index:1!important;}
+ .hero-transition-overlay{position:absolute!important;left:0!important;right:0!important;top:auto!important;bottom:0!important;width:100%!important;height:auto!important;z-index:2!important;}
+ .hero-actions-strip{position:absolute!important;z-index:5!important;left:50%!important;transform:translateX(-50%)!important;bottom:clamp(90px,14vw,160px)!important;max-width:calc(100% - 2rem)!important;}
+ .welcome{position:relative!important;top:auto!important;left:auto!important;width:100%!important;height:auto!important;margin:0!important;padding:2.25rem 1.25rem 2.5rem!important;background:var(--cream)!important;overflow:visible!important;z-index:2!important;}
+ .welcome-inner{position:relative!important;top:auto!important;left:auto!important;right:auto!important;z-index:2!important;max-width:900px!important;margin:0 auto!important;padding:0!important;}
+ .welcome .section-kicker,.welcome h2,.welcome p{z-index:auto!important;text-shadow:none!important;}
+ .welcome h2{font-size:clamp(1.9rem,4.2vw,2.8rem)!important;margin:.5rem 0 .65rem!important;}
+ .welcome p{font-size:clamp(.9rem,1.6vw,1rem)!important;line-height:1.55!important;}
+ .journey{padding:2.75rem 1rem 3rem!important;margin:0!important;z-index:1!important;}
+ .section-transition-divider{position:relative!important;top:auto!important;left:auto!important;transform:none!important;width:100%!important;margin:0 auto 1.25rem!important;}
+}
+@media(max-width:800px){
+ .week-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+}
+@media(max-width:560px){
+ .hero-actions-strip{bottom:clamp(65px,18vw,100px)!important;}
+ .welcome{padding:1.6rem 1rem 2rem!important;}
+ .journey{padding:2rem .75rem 2.5rem!important;}
+ .week-grid{grid-template-columns:1fr!important;}
+}
