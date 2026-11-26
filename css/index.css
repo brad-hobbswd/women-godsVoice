@@ -542,3 +542,9 @@
 @media(max-width:1100px) and (orientation:landscape){
   body .hero-transition-overlay{bottom:-230px!important;}
 }
+
+
+/* Final 10px downward adjustment for tablet-landscape overlay */
+@media(max-width:1100px) and (orientation:landscape){
+  body .hero-transition-overlay{bottom:-240px!important;}
+}
