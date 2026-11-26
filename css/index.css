@@ -530,3 +530,9 @@
   body .section-transition-divider{transform:translateY(8px)!important;margin-top:.5rem!important;}
   body #journey{padding-top:1.8rem!important;}
 }
+
+
+/* Extend the tablet-landscape transition overlay down to the gold edge */
+@media(max-width:1100px) and (orientation:landscape){
+  body .hero-transition-overlay{bottom:-165px!important;}
+}
