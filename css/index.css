@@ -45,3 +45,18 @@
 .welcome p{color:#3d302b;text-shadow:0 1px 4px rgba(255,250,244,.65);}
 @media(max-width:800px){.welcome{background-size:100% auto;background-position:center top;padding-top:3rem;}}
 @media(max-width:560px){.welcome{background-size:auto 100%;background-position:center top;padding:2.8rem 1.1rem 3.2rem;}}
+
+
+/* Final layout: scenic overlay bridges hero banner into the welcome section */
+.hero{position:relative;z-index:1;overflow:visible!important;}
+.hero-banner{position:relative;z-index:1;}
+.hero-actions-strip{z-index:20!important;}
+.welcome{position:relative;z-index:2;margin-top:-100px;padding:145px 1.5rem 4.2rem;isolation:isolate;overflow:visible;background-color:var(--cream);background-image:linear-gradient(to bottom,rgba(247,235,221,.06) 0%,rgba(247,235,221,.18) 28%,rgba(247,235,221,.6) 68%,var(--cream) 100%),url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png');background-repeat:no-repeat;background-position:center top;background-size:100% auto;}
+.welcome::before,.welcome::after{display:none!important;content:none!important;}
+.welcome-inner{position:relative;z-index:3;max-width:900px;margin:auto;text-align:center;}
+.welcome .section-kicker{color:#765125;text-shadow:0 1px 5px rgba(255,250,244,.65);}
+.welcome h2{color:var(--plum);text-shadow:0 1px 6px rgba(255,250,244,.55);}
+.welcome p{color:#3d302b;text-shadow:0 1px 5px rgba(255,250,244,.6);}
+@media(max-width:1050px){.welcome{margin-top:-75px;padding-top:120px;background-size:cover;background-position:center top;}}
+@media(max-width:800px){.welcome{margin-top:-65px;padding-top:110px;background-size:auto 100%;background-position:center top;}}
+@media(max-width:560px){.welcome{margin-top:-45px;padding:85px 1.1rem 3.3rem;background-size:auto 100%;background-position:center top;}}
