@@ -73,3 +73,18 @@
  .journey{padding-top:175px!important;}
  .section-transition-divider{top:calc(100% + 155px)!important;}
 }
+
+/* Tablet portrait refinement: compact hero CTAs and bring welcome copy forward */
+@media(min-width:561px) and (max-width:1100px){
+ .hero-actions-strip{gap:.45rem!important;padding:.38rem .5rem!important;}
+ .hero-actions-strip .button{padding:.58rem 1rem!important;font-size:.64rem!important;letter-spacing:.045em!important;}
+ .welcome-inner{z-index:40!important;position:absolute!important;}
+ .welcome .section-kicker,.welcome h2,.welcome p{position:relative!important;z-index:41!important;text-shadow:0 2px 10px rgba(255,248,235,.96),0 0 18px rgba(255,248,235,.9)!important;}
+ .welcome h2{font-size:clamp(2rem,4.2vw,3rem)!important;margin:.35rem 0 .6rem!important;}
+ .welcome p{font-size:clamp(.88rem,1.7vw,1rem)!important;line-height:1.5!important;}
+}
+@media(max-width:560px){
+ .hero-actions-strip .button{padding:.42rem .6rem!important;font-size:.56rem!important;letter-spacing:.03em!important;}
+ .welcome-inner{z-index:40!important;}
+ .welcome .section-kicker,.welcome h2,.welcome p{position:relative!important;z-index:41!important;text-shadow:0 2px 10px rgba(255,248,235,.96),0 0 18px rgba(255,248,235,.9)!important;}
+}
