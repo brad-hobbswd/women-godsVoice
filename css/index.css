@@ -356,3 +356,18 @@
 @media(max-width:1100px){.welcome{margin-top:-65px!important;}}
 @media(max-width:800px){.welcome{margin-top:-55px!important;}}
 @media(max-width:560px){.welcome{margin-top:-45px!important;}}
+
+
+/* Final responsive refinement: smaller banner buttons, welcome text lower */
+@media(max-width:1100px){
+ .hero-actions-strip .button{padding:.34rem .58rem!important;font-size:.52rem!important;}
+ .welcome{margin-top:-35px!important;}
+}
+@media(max-width:800px){
+ .hero-actions-strip .button{padding:.32rem .52rem!important;font-size:.50rem!important;}
+ .welcome{margin-top:-25px!important;}
+}
+@media(max-width:560px){
+ .hero-actions-strip .button{padding:.28rem .42rem!important;font-size:.46rem!important;}
+ .welcome{margin-top:-18px!important;}
+}
