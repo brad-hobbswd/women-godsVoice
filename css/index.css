@@ -339,3 +339,14 @@
  body #journey .journey-inner>.section-heading{transform:translateY(-125px)!important;}
  body #journey .journey-inner>.week-grid{margin-top:-80px!important;}
 }
+
+
+/* Correct target: lift the welcome heading/content into the cream overlay area */
+@media(max-width:1100px){
+ body #journey .journey-inner>.section-heading{transform:none!important;margin-top:0!important;}
+ body #journey .journey-inner>.week-grid{margin-top:0!important;}
+ .welcome{position:relative!important;z-index:10!important;padding-top:0!important;margin-top:-95px!important;padding-bottom:1.2rem!important;}
+ .welcome-inner{position:relative!important;z-index:12!important;}
+}
+@media(max-width:800px){.welcome{margin-top:-80px!important;padding-bottom:1rem!important;}}
+@media(max-width:560px){.welcome{margin-top:-65px!important;padding-bottom:.8rem!important;}}
