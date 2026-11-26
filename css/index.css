@@ -488,3 +488,9 @@
 @media(max-width:1100px){.journey-inner>.section-heading{transform:translateY(18px)!important;}}
 @media(max-width:800px){.journey-inner>.section-heading{transform:translateY(22px)!important;}}
 @media(max-width:560px){.journey-inner>.section-heading{transform:translateY(26px)!important;}}
+
+
+/* Correct the higher-specificity heading positioning override */
+@media(max-width:1100px){body #journey .journey-inner>.section-heading{transform:translateY(24px)!important;}}
+@media(max-width:800px){body #journey .journey-inner>.section-heading{transform:translateY(32px)!important;}}
+@media(max-width:560px){body #journey .journey-inner>.section-heading{transform:translateY(40px)!important;}}
