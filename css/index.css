@@ -19,5 +19,6 @@
 @media(max-width:560px){.hero-actions-strip{bottom:8%!important;gap:.35rem!important;padding:.35rem!important}.hero-actions-strip .button{width:auto!important;padding:.5rem .65rem!important;font-size:.58rem!important;}}
 
 /* Fine-tune CTA placement closer to the banner wording */
-.hero-actions-strip{bottom:19%!important;}
+.hero-actions-strip{bottom:22%!important;}
+@media(max-width:800px){.hero-actions-strip{bottom:14%!important;}}
 @media(max-width:560px){.hero-actions-strip{bottom:14%!important;}}
