@@ -371,3 +371,9 @@
  .hero-actions-strip .button{padding:.28rem .42rem!important;font-size:.46rem!important;}
  .welcome{margin-top:-18px!important;}
 }
+
+
+/* Lower welcome copy farther into the transition area */
+@media(max-width:1100px){.welcome{margin-top:-15px!important;}}
+@media(max-width:800px){.welcome{margin-top:-5px!important;}}
+@media(max-width:560px){.welcome{margin-top:0!important;}}
