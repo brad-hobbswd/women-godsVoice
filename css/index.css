@@ -416,3 +416,9 @@
 @media(max-width:1100px){.welcome-inner{transform:translateY(24px)!important;}}
 @media(max-width:800px){.welcome-inner{transform:translateY(28px)!important;}}
 @media(max-width:560px){.welcome-inner{transform:translateY(32px)!important;}}
+
+
+/* Place the gold transition divider below the welcome copy */
+@media(max-width:1100px){.hero-transition-overlay{bottom:-195px!important;}}
+@media(max-width:800px){.hero-transition-overlay{bottom:-175px!important;}}
+@media(max-width:560px){.hero-transition-overlay{bottom:-145px!important;}}
