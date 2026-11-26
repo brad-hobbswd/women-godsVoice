@@ -186,3 +186,32 @@
  .journey{padding:220px .75rem 2.5rem!important;}
  .section-transition-divider{top:calc(100% + 190px)!important;}
 }
+
+
+/* Rebuild tablet/mobile transition in normal flow: preserve hero artwork and welcome copy */
+@media(max-width:1100px){
+ body{background:var(--plum)!important;}
+ .hero{overflow:hidden!important;z-index:1!important;}
+ .hero-banner{position:relative!important;z-index:1!important;display:block!important;width:100%!important;height:auto!important;}
+ .hero-transition-overlay{display:none!important;}
+ .hero-actions-strip{position:absolute!important;left:50%!important;transform:translateX(-50%)!important;z-index:5!important;bottom:clamp(65px,13vw,135px)!important;}
+ .welcome{position:relative!important;left:auto!important;top:auto!important;width:100%!important;height:auto!important;margin:0!important;padding:2rem 1.25rem 1.75rem!important;background:transparent!important;background-color:transparent!important;box-shadow:none!important;border:0!important;overflow:visible!important;z-index:2!important;}
+ .welcome-inner{position:relative!important;top:auto!important;left:auto!important;right:auto!important;max-width:900px!important;margin:0 auto!important;padding:0!important;text-align:center!important;background:transparent!important;box-shadow:none!important;border:0!important;z-index:auto!important;}
+ .welcome .section-kicker,.welcome h2,.welcome p{text-shadow:none!important;}
+ .welcome h2{font-size:clamp(1.9rem,4.2vw,2.8rem)!important;margin:.45rem 0 .65rem!important;}
+ .welcome p{font-size:clamp(.88rem,1.6vw,1rem)!important;line-height:1.5!important;}
+ .section-transition-divider{display:none!important;}
+ .journey{position:relative!important;z-index:2!important;margin:0!important;padding:2.5rem 1rem 3rem!important;border-top:0!important;}
+}
+@media(max-width:800px){
+ .welcome{padding:1.75rem 1rem 1.5rem!important;}
+ .journey{padding:2rem .9rem 2.5rem!important;}
+}
+@media(max-width:560px){
+ .hero-actions-strip{bottom:clamp(48px,12vw,75px)!important;gap:.35rem!important;padding:.35rem!important;}
+ .hero-actions-strip .button{padding:.42rem .6rem!important;font-size:.56rem!important;}
+ .welcome{padding:1.4rem .9rem 1.25rem!important;}
+ .welcome h2{font-size:clamp(1.75rem,7.2vw,2.35rem)!important;}
+ .welcome p{font-size:.84rem!important;line-height:1.45!important;}
+ .journey{padding:1.6rem .75rem 2.5rem!important;}
+}
