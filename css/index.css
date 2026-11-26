@@ -22,3 +22,15 @@
 .hero-actions-strip{bottom:22%!important;}
 @media(max-width:800px){.hero-actions-strip{bottom:14%!important;}}
 @media(max-width:560px){.hero-actions-strip{bottom:14%!important;}}
+
+
+/* Scenic artwork overlay for the welcome / discernment introduction */
+.welcome{position:relative;isolation:isolate;overflow:hidden;background:var(--cream);padding:3.8rem 1.5rem 4.2rem;}
+.welcome::before{content:"";position:absolute;inset:0;z-index:-1;background-image:url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png');background-repeat:no-repeat;background-position:center center;background-size:cover;opacity:.98;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 7%,black 76%,transparent 100%),linear-gradient(to right,transparent 0%,black 9%,black 91%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,transparent 0%,black 7%,black 76%,transparent 100%),linear-gradient(to right,transparent 0%,black 9%,black 91%,transparent 100%);mask-composite:intersect;}
+.welcome::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(247,235,221,.12) 0%,rgba(247,235,221,.3) 35%,rgba(247,235,221,.72) 82%,var(--cream) 100%);pointer-events:none;}
+.welcome-inner{position:relative;z-index:1;text-shadow:0 1px 0 rgba(255,250,244,.45);}
+.welcome .section-kicker{color:#754c25;text-shadow:0 1px 5px rgba(255,250,244,.75);}
+.welcome h2{color:#32182d;text-shadow:0 1px 8px rgba(255,250,244,.75);}
+.welcome p{color:#3d302b;text-shadow:0 1px 6px rgba(255,250,244,.7);}
+@media(max-width:800px){.welcome::before{background-position:center center;background-size:auto 100%;}}
+@media(max-width:560px){.welcome{padding:2.8rem 1.1rem 3.4rem;}.welcome::before{background-size:auto 115%;background-position:center center;opacity:.9;}}
