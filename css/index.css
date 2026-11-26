@@ -448,3 +448,9 @@
 .section-transition-divider{transform:translateY(24px)!important;}
 @media(max-width:800px){.section-transition-divider{transform:translateY(20px)!important;}}
 @media(max-width:560px){.section-transition-divider{transform:translateY(16px)!important;}}
+
+
+/* Fine tune gold divider: 10px upward from previous position */
+.section-transition-divider{transform:translateY(14px)!important;}
+@media(max-width:800px){.section-transition-divider{transform:translateY(10px)!important;}}
+@media(max-width:560px){.section-transition-divider{transform:translateY(6px)!important;}}
