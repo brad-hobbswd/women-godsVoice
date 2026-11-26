@@ -215,3 +215,35 @@
  .welcome p{font-size:.84rem!important;line-height:1.45!important;}
  .journey{padding:1.6rem .75rem 2.5rem!important;}
 }
+
+
+/* Keep the transition artwork: overlay overlaps hero and leads into transparent welcome copy */
+@media(max-width:1100px){
+ body{background:var(--plum)!important;}
+ .hero{position:relative!important;overflow:visible!important;z-index:3!important;margin-bottom:0!important;}
+ .hero-banner{position:relative!important;z-index:1!important;display:block!important;width:100%!important;height:auto!important;}
+ .hero-transition-overlay{display:block!important;position:absolute!important;left:0!important;right:0!important;top:auto!important;bottom:-100px!important;width:100%!important;height:auto!important;z-index:4!important;pointer-events:none!important;}
+ .hero-actions-strip{position:absolute!important;left:50%!important;transform:translateX(-50%)!important;z-index:6!important;bottom:clamp(65px,13vw,135px)!important;}
+ .welcome{position:relative!important;left:auto!important;top:auto!important;width:100%!important;height:auto!important;margin:0!important;padding:105px 1.25rem 1.75rem!important;background:transparent!important;background-color:transparent!important;box-shadow:none!important;border:0!important;overflow:visible!important;z-index:5!important;}
+ .welcome::before,.welcome::after{content:none!important;display:none!important;}
+ .welcome-inner{position:relative!important;top:auto!important;left:auto!important;right:auto!important;max-width:900px!important;margin:0 auto!important;padding:0!important;text-align:center!important;background:transparent!important;box-shadow:none!important;border:0!important;z-index:7!important;}
+ .welcome .section-kicker,.welcome h2,.welcome p{text-shadow:0 2px 8px rgba(255,248,235,.72)!important;}
+ .welcome h2{font-size:clamp(1.9rem,4.2vw,2.8rem)!important;margin:.45rem 0 .65rem!important;}
+ .welcome p{font-size:clamp(.88rem,1.6vw,1rem)!important;line-height:1.5!important;}
+ .section-transition-divider{display:flex!important;position:relative!important;left:auto!important;top:auto!important;transform:none!important;width:98%!important;margin:0 auto 1.2rem!important;z-index:8!important;}
+ .journey{position:relative!important;z-index:2!important;margin:0!important;padding:2.5rem 1rem 3rem!important;border-top:0!important;}
+}
+@media(max-width:800px){
+ .hero-transition-overlay{bottom:-85px!important;}
+ .welcome{padding-top:90px!important;padding-bottom:1.5rem!important;}
+ .journey{padding:2rem .9rem 2.5rem!important;}
+}
+@media(max-width:560px){
+ .hero-transition-overlay{bottom:-58px!important;}
+ .hero-actions-strip{bottom:clamp(48px,12vw,75px)!important;gap:.35rem!important;padding:.35rem!important;}
+ .hero-actions-strip .button{padding:.42rem .6rem!important;font-size:.56rem!important;}
+ .welcome{padding:74px .9rem 1.25rem!important;}
+ .welcome h2{font-size:clamp(1.75rem,7.2vw,2.35rem)!important;}
+ .welcome p{font-size:.84rem!important;line-height:1.45!important;}
+ .journey{padding:1.6rem .75rem 2.5rem!important;}
+}
