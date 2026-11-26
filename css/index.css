@@ -514,3 +514,19 @@
 
 /* Keep the portrait background adjustment out of tablet landscape */
 @media(max-width:1100px) and (orientation:landscape){body section#about-study.about-study{background:linear-gradient(rgba(247,235,221,.12),rgba(247,235,221,.12)),url('../images/0187441F-B398-46CF-8924-9C7F621B6E18.png') center/cover no-repeat!important;}}
+
+
+/* Tablet landscape hero correction: preserve the banner and keep the transition below the title */
+@media (max-width:1100px) and (orientation:landscape){
+  body .hero{overflow:visible!important;position:relative!important;z-index:3!important;margin-bottom:0!important;}
+  body .hero-banner{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;position:relative!important;z-index:1!important;}
+  body .hero-transition-overlay{position:absolute!important;left:0!important;right:0!important;top:auto!important;bottom:-95px!important;width:100%!important;height:auto!important;z-index:4!important;pointer-events:none!important;}
+  body .hero-actions-strip{bottom:clamp(34px,6vw,72px)!important;left:50%!important;transform:translateX(-50%)!important;z-index:8!important;max-width:90%!important;}
+  body .hero-actions-strip .button{padding:.42rem .7rem!important;font-size:.56rem!important;line-height:1.15!important;}
+  body .welcome{margin-top:-8px!important;padding:72px 1.25rem 1rem!important;position:relative!important;z-index:5!important;}
+  body .welcome-inner{transform:translateY(8px)!important;padding-inline:1rem!important;}
+  body .welcome h2{font-size:clamp(1.55rem,3vw,2.25rem)!important;}
+  body .welcome p{font-size:clamp(.8rem,1.35vw,.95rem)!important;}
+  body .section-transition-divider{transform:translateY(8px)!important;margin-top:.5rem!important;}
+  body #journey{padding-top:1.8rem!important;}
+}
