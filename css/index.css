@@ -377,3 +377,21 @@
 @media(max-width:1100px){.welcome{margin-top:-15px!important;}}
 @media(max-width:800px){.welcome{margin-top:-5px!important;}}
 @media(max-width:560px){.welcome{margin-top:0!important;}}
+
+
+/* Refine welcome text scale for tablet and mobile */
+@media(max-width:1100px){
+ .welcome-inner .section-kicker{font-size:.68rem!important;}
+ .welcome-inner h2{font-size:1.35rem!important;line-height:1.2!important;}
+ .welcome-inner p{font-size:.82rem!important;line-height:1.5!important;}
+}
+@media(max-width:800px){
+ .welcome-inner .section-kicker{font-size:.62rem!important;}
+ .welcome-inner h2{font-size:1.2rem!important;line-height:1.2!important;}
+ .welcome-inner p{font-size:.76rem!important;line-height:1.45!important;}
+}
+@media(max-width:560px){
+ .welcome-inner .section-kicker{font-size:.56rem!important;}
+ .welcome-inner h2{font-size:1.05rem!important;line-height:1.2!important;}
+ .welcome-inner p{font-size:.7rem!important;line-height:1.4!important;}
+}
