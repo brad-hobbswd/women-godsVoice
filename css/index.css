@@ -276,6 +276,6 @@
 
 
 /* Move the second transition overlay farther down while preserving established sizing */
-@media(max-width:1100px){.hero-transition-overlay{bottom:-175px!important;}}
-@media(max-width:800px){.hero-transition-overlay{bottom:-150px!important;}}
-@media(max-width:560px){.hero-transition-overlay{bottom:-115px!important;}}
+@media(max-width:1100px){.hero-transition-overlay{bottom:-165px!important;}}
+@media(max-width:800px){.hero-transition-overlay{bottom:-140px!important;}}
+@media(max-width:560px){.hero-transition-overlay{bottom:-105px!important;}}
