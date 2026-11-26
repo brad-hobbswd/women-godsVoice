@@ -34,3 +34,14 @@
 .welcome p{color:#3d302b;text-shadow:0 1px 6px rgba(255,250,244,.7);}
 @media(max-width:800px){.welcome::before{background-position:center center;background-size:auto 100%;}}
 @media(max-width:560px){.welcome{padding:2.8rem 1.1rem 3.4rem;}.welcome::before{background-size:auto 115%;background-position:center center;opacity:.9;}}
+
+
+/* Corrected scenic overlay: subtle artwork with a soft parchment fade */
+.welcome{position:relative;isolation:auto;overflow:hidden;background-color:var(--cream);background-image:linear-gradient(to bottom,rgba(247,235,221,.18) 0%,rgba(247,235,221,.48) 48%,rgba(247,235,221,.92) 82%,var(--cream) 100%),url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png');background-repeat:no-repeat;background-position:center top;background-size:100% auto;padding:3.2rem 1.5rem 3.8rem;}
+.welcome::before,.welcome::after{content:none!important;display:none!important;}
+.welcome-inner{position:relative;z-index:1;text-shadow:none;}
+.welcome .section-kicker{color:#754c25;text-shadow:0 1px 4px rgba(255,250,244,.7);}
+.welcome h2{color:var(--plum);text-shadow:0 1px 5px rgba(255,250,244,.65);max-width:950px;margin-left:auto;margin-right:auto;}
+.welcome p{color:#3d302b;text-shadow:0 1px 4px rgba(255,250,244,.65);}
+@media(max-width:800px){.welcome{background-size:100% auto;background-position:center top;padding-top:3rem;}}
+@media(max-width:560px){.welcome{background-size:auto 100%;background-position:center top;padding:2.8rem 1.1rem 3.2rem;}}
