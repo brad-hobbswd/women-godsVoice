@@ -279,3 +279,9 @@
 @media(max-width:1100px){.hero-transition-overlay{bottom:-165px!important;}}
 @media(max-width:800px){.hero-transition-overlay{bottom:-140px!important;}}
 @media(max-width:560px){.hero-transition-overlay{bottom:-105px!important;}}
+
+
+/* Slightly smaller hero CTA buttons across tablet and mobile */
+@media(max-width:1100px){.hero-actions-strip .button{padding:.44rem .72rem!important;font-size:.58rem!important;}}
+@media(max-width:800px){.hero-actions-strip .button{padding:.40rem .64rem!important;font-size:.56rem!important;}}
+@media(max-width:560px){.hero-actions-strip .button{padding:.34rem .48rem!important;font-size:.49rem!important;}}
