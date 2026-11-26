@@ -432,3 +432,7 @@
 .section-transition-divider::before,.section-transition-divider::after{height:12px!important;}
 @media(max-width:800px){.section-transition-divider{margin-top:.8rem!important;gap:.35rem!important;}.section-transition-divider::before,.section-transition-divider::after{height:10px!important;}}
 @media(max-width:560px){.section-transition-divider{margin-top:.65rem!important;gap:.25rem!important;}.section-transition-divider::before,.section-transition-divider::after{height:8px!important;}}
+
+
+/* Gold divider is transparent: only the decorative gold rails and star remain */
+.section-transition-divider{background:transparent!important;background-color:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;}
