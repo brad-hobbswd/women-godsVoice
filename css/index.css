@@ -18,6 +18,6 @@
 .hero-actions-strip{position:absolute!important;left:50%!important;bottom:12%!important;transform:translateX(-50%)!important;z-index:5;display:flex!important;flex-direction:row!important;align-items:center;justify-content:center;gap:.65rem!important;width:max-content;max-width:92%;padding:.5rem .65rem!important;background:rgba(50,24,45,.66);border:1px solid rgba(215,185,120,.7);border-radius:5px;}
 @media(max-width:560px){.hero-actions-strip{bottom:8%!important;gap:.35rem!important;padding:.35rem!important}.hero-actions-strip .button{width:auto!important;padding:.5rem .65rem!important;font-size:.58rem!important;}}
 
-/* Fine-tune CTA placement slightly closer to the banner wording */
-.hero-actions-strip{bottom:16%!important;}
-@media(max-width:560px){.hero-actions-strip{bottom:11%!important;}}
+/* Fine-tune CTA placement closer to the banner wording */
+.hero-actions-strip{bottom:19%!important;}
+@media(max-width:560px){.hero-actions-strip{bottom:14%!important;}}
