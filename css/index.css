@@ -395,3 +395,18 @@
  .welcome-inner h2{font-size:1.05rem!important;line-height:1.2!important;}
  .welcome-inner p{font-size:.7rem!important;line-height:1.4!important;}
 }
+
+
+/* Keep welcome copy clear of the decorative foliage */
+@media(max-width:1100px){
+ .welcome-inner{max-width:760px!important;margin-inline:auto!important;padding-inline:2.5rem!important;}
+ .welcome-inner p{max-width:650px!important;margin-inline:auto!important;}
+}
+@media(max-width:800px){
+ .welcome-inner{padding-inline:3.25rem!important;}
+ .welcome-inner p{max-width:560px!important;}
+}
+@media(max-width:560px){
+ .welcome-inner{padding-inline:2.2rem!important;}
+ .welcome-inner p{max-width:420px!important;}
+}
