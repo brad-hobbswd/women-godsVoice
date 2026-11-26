@@ -71,3 +71,15 @@
 .welcome-inner{position:relative;z-index:2;}
 @media(max-width:800px){.welcome::before{top:-100px;height:280px;background-size:auto 100%;opacity:.2;}}
 @media(max-width:560px){.welcome{padding:2.7rem 1.1rem 3.2rem!important;}.welcome::before{top:-70px;height:230px;background-size:auto 100%;opacity:.16;}}
+
+
+/* Correct intended transition: overlay artwork spans banner bottom into welcome text area */
+.hero{position:relative;z-index:1;overflow:visible!important;margin-bottom:0!important;}
+.hero-banner{display:block;width:100%;height:auto;position:relative;z-index:1;}
+.welcome{position:relative;z-index:3;margin-top:-185px!important;padding:245px 1.5rem 3.6rem!important;min-height:390px;overflow:visible;background-color:transparent!important;background-image:url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png')!important;background-repeat:no-repeat!important;background-position:center top!important;background-size:100% auto!important;isolation:isolate;}
+.welcome::before,.welcome::after{display:none!important;content:none!important;}
+.welcome-inner{position:relative;z-index:4;max-width:900px;margin:0 auto;text-align:center;}
+.welcome .section-kicker,.welcome h2,.welcome p{ text-shadow:0 1px 4px rgba(255,248,235,.35);}
+@media(max-width:1000px){.welcome{margin-top:-145px!important;padding-top:205px!important;background-size:auto 100%!important;min-height:360px;}}
+@media(max-width:800px){.welcome{margin-top:-125px!important;padding-top:190px!important;background-size:auto 100%!important;min-height:350px;}}
+@media(max-width:560px){.welcome{margin-top:-90px!important;padding:155px 1.1rem 3rem!important;background-size:auto 100%!important;min-height:330px;background-position:center top!important;}}
