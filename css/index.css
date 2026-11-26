@@ -548,3 +548,9 @@
 @media(max-width:1100px) and (orientation:landscape){
   body .hero-transition-overlay{bottom:-240px!important;}
 }
+
+
+/* Raise the "Learning the Voice of God" welcome text in tablet landscape */
+@media(max-width:1100px) and (orientation:landscape){
+  body .welcome-inner{transform:translateY(-8px)!important;}
+}
