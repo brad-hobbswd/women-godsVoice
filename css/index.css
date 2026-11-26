@@ -24,74 +24,17 @@
 @media(max-width:560px){.hero-actions-strip{bottom:14%!important;}}
 
 
-/* Scenic artwork overlay for the welcome / discernment introduction */
-.welcome{position:relative;isolation:isolate;overflow:hidden;background:var(--cream);padding:3.8rem 1.5rem 4.2rem;}
-.welcome::before{content:"";position:absolute;inset:0;z-index:-1;background-image:url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png');background-repeat:no-repeat;background-position:center center;background-size:cover;opacity:.98;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 7%,black 76%,transparent 100%),linear-gradient(to right,transparent 0%,black 9%,black 91%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,transparent 0%,black 7%,black 76%,transparent 100%),linear-gradient(to right,transparent 0%,black 9%,black 91%,transparent 100%);mask-composite:intersect;}
-.welcome::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(247,235,221,.12) 0%,rgba(247,235,221,.3) 35%,rgba(247,235,221,.72) 82%,var(--cream) 100%);pointer-events:none;}
-.welcome-inner{position:relative;z-index:1;text-shadow:0 1px 0 rgba(255,250,244,.45);}
-.welcome .section-kicker{color:#754c25;text-shadow:0 1px 5px rgba(255,250,244,.75);}
-.welcome h2{color:#32182d;text-shadow:0 1px 8px rgba(255,250,244,.75);}
-.welcome p{color:#3d302b;text-shadow:0 1px 6px rgba(255,250,244,.7);}
-@media(max-width:800px){.welcome::before{background-position:center center;background-size:auto 100%;}}
-@media(max-width:560px){.welcome{padding:2.8rem 1.1rem 3.4rem;}.welcome::before{background-size:auto 115%;background-position:center center;opacity:.9;}}
 
 
-/* Corrected scenic overlay: subtle artwork with a soft parchment fade */
-.welcome{position:relative;isolation:auto;overflow:hidden;background-color:var(--cream);background-image:linear-gradient(to bottom,rgba(247,235,221,.18) 0%,rgba(247,235,221,.48) 48%,rgba(247,235,221,.92) 82%,var(--cream) 100%),url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png');background-repeat:no-repeat;background-position:center top;background-size:100% auto;padding:3.2rem 1.5rem 3.8rem;}
+/* Scenic overlay layered over the existing hero and carried into the welcome copy */
+.hero{position:relative!important;overflow:visible!important;z-index:3!important;}
+.hero-banner{position:relative!important;z-index:1!important;}
+.hero-transition-overlay{position:absolute!important;left:0!important;top:calc(100% - clamp(75px,9vw,145px))!important;width:100%!important;height:auto!important;display:block!important;z-index:4!important;pointer-events:none!important;}
+.hero-actions-strip{z-index:6!important;}
+.welcome{position:relative!important;z-index:2!important;background:transparent!important;margin:0!important;padding:clamp(150px,18vw,255px) 1.5rem 3rem!important;overflow:visible!important;isolation:auto!important;}
 .welcome::before,.welcome::after{content:none!important;display:none!important;}
-.welcome-inner{position:relative;z-index:1;text-shadow:none;}
-.welcome .section-kicker{color:#754c25;text-shadow:0 1px 4px rgba(255,250,244,.7);}
-.welcome h2{color:var(--plum);text-shadow:0 1px 5px rgba(255,250,244,.65);max-width:950px;margin-left:auto;margin-right:auto;}
-.welcome p{color:#3d302b;text-shadow:0 1px 4px rgba(255,250,244,.65);}
-@media(max-width:800px){.welcome{background-size:100% auto;background-position:center top;padding-top:3rem;}}
-@media(max-width:560px){.welcome{background-size:auto 100%;background-position:center top;padding:2.8rem 1.1rem 3.2rem;}}
-
-
-/* Final layout: scenic overlay bridges hero banner into the welcome section */
-.hero{position:relative;z-index:1;overflow:visible!important;}
-.hero-banner{position:relative;z-index:1;}
-.hero-actions-strip{z-index:20!important;}
-.welcome{position:relative;z-index:2;margin-top:-100px;padding:145px 1.5rem 4.2rem;isolation:isolate;overflow:visible;background-color:var(--cream);background-image:linear-gradient(to bottom,rgba(247,235,221,.06) 0%,rgba(247,235,221,.18) 28%,rgba(247,235,221,.6) 68%,var(--cream) 100%),url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png');background-repeat:no-repeat;background-position:center top;background-size:100% auto;}
-.welcome::before,.welcome::after{display:none!important;content:none!important;}
-.welcome-inner{position:relative;z-index:3;max-width:900px;margin:auto;text-align:center;}
-.welcome .section-kicker{color:#765125;text-shadow:0 1px 5px rgba(255,250,244,.65);}
-.welcome h2{color:var(--plum);text-shadow:0 1px 6px rgba(255,250,244,.55);}
-.welcome p{color:#3d302b;text-shadow:0 1px 5px rgba(255,250,244,.6);}
-@media(max-width:1050px){.welcome{margin-top:-75px;padding-top:120px;background-size:cover;background-position:center top;}}
-@media(max-width:800px){.welcome{margin-top:-65px;padding-top:110px;background-size:auto 100%;background-position:center top;}}
-@media(max-width:560px){.welcome{margin-top:-45px;padding:85px 1.1rem 3.3rem;background-size:auto 100%;background-position:center top;}}
-
-
-/* FIX: keep overlay as a soft transition accent, not a second full banner */
-.hero{position:relative;z-index:2;overflow:visible!important;margin-bottom:0!important;}
-.hero-banner{display:block;width:100%;height:auto;position:relative;z-index:1;}
-.welcome{position:relative;z-index:1;margin-top:0!important;padding:3.2rem 1.5rem 4rem!important;overflow:hidden;background:var(--cream)!important;background-image:none!important;isolation:isolate;}
-.welcome::before{content:""!important;display:block!important;position:absolute!important;z-index:-1!important;left:0;right:0;top:-135px;height:330px;background-image:url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png');background-repeat:no-repeat;background-position:center center;background-size:cover;opacity:.23;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.18) 18%,black 45%,black 70%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.18) 18%,black 45%,black 70%,transparent 100%);pointer-events:none;}
-.welcome::after{content:""!important;display:block!important;position:absolute!important;z-index:-1!important;inset:0!important;background:linear-gradient(to bottom,rgba(247,235,221,.12) 0%,rgba(247,235,221,.62) 42%,var(--cream) 82%)!important;pointer-events:none;}
-.welcome-inner{position:relative;z-index:2;}
-@media(max-width:800px){.welcome::before{top:-100px;height:280px;background-size:auto 100%;opacity:.2;}}
-@media(max-width:560px){.welcome{padding:2.7rem 1.1rem 3.2rem!important;}.welcome::before{top:-70px;height:230px;background-size:auto 100%;opacity:.16;}}
-
-
-/* Correct intended transition: overlay artwork spans banner bottom into welcome text area */
-.hero{position:relative;z-index:1;overflow:visible!important;margin-bottom:0!important;}
-.hero-banner{display:block;width:100%;height:auto;position:relative;z-index:1;}
-.welcome{position:relative;z-index:3;margin-top:-185px!important;padding:245px 1.5rem 3.6rem!important;min-height:390px;overflow:visible;background-color:transparent!important;background-image:url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png')!important;background-repeat:no-repeat!important;background-position:center top!important;background-size:100% auto!important;isolation:isolate;}
-.welcome::before,.welcome::after{display:none!important;content:none!important;}
-.welcome-inner{position:relative;z-index:4;max-width:900px;margin:0 auto;text-align:center;}
-.welcome .section-kicker,.welcome h2,.welcome p{ text-shadow:0 1px 4px rgba(255,248,235,.35);}
-@media(max-width:1000px){.welcome{margin-top:-145px!important;padding-top:205px!important;background-size:auto 100%!important;min-height:360px;}}
-@media(max-width:800px){.welcome{margin-top:-125px!important;padding-top:190px!important;background-size:auto 100%!important;min-height:350px;}}
-@media(max-width:560px){.welcome{margin-top:-90px!important;padding:155px 1.1rem 3rem!important;background-size:auto 100%!important;min-height:330px;background-position:center top!important;}}
-
-
-/* Definitive overlay treatment using the supplied 1536x512 transition artwork */
-.hero{position:relative;z-index:1;overflow:visible!important;margin:0!important;}
-.hero-banner{display:block;width:100%;height:auto;position:relative;z-index:1;}
-.welcome{position:relative;z-index:2;margin:0!important;padding:155px 1.5rem 3.25rem!important;min-height:0!important;overflow:visible;background:var(--cream)!important;background-image:none!important;isolation:isolate;}
-.welcome::before{content:""!important;display:block!important;position:absolute!important;z-index:-1!important;left:0;right:0;top:-115px;height:min(34vw,512px);min-height:320px;background:url('../images/CDB1CBF2-3EBD-46DF-9C45-FD391C1A8161.png') center top/100% auto no-repeat!important;pointer-events:none;}
-.welcome::after{content:""!important;display:block!important;position:absolute!important;z-index:-1!important;inset:0!important;background:linear-gradient(to bottom,rgba(247,235,221,0) 0%,rgba(247,235,221,.05) 35%,rgba(247,235,221,.45) 65%,var(--cream) 100%)!important;pointer-events:none;}
-.welcome-inner{position:relative;z-index:3;max-width:900px;margin:0 auto;text-align:center;}
-.welcome .section-kicker,.welcome h2,.welcome p{text-shadow:0 1px 5px rgba(255,248,235,.65);}
-@media(max-width:800px){.welcome{padding-top:135px!important;}.welcome::before{top:-90px;height:min(55vw,430px);min-height:270px;background-size:auto 100%!important;background-position:center top!important;}}
-@media(max-width:560px){.welcome{padding:110px 1.1rem 2.8rem!important;}.welcome::before{top:-70px;height:300px;min-height:0;background-size:auto 100%!important;background-position:center top!important;}}
+.welcome-inner{position:relative!important;z-index:7!important;max-width:900px;margin:0 auto;text-align:center;}
+.welcome .section-kicker,.welcome h2,.welcome p{text-shadow:0 1px 5px rgba(255,248,235,.7);}
+.journey{position:relative;z-index:1;}
+@media(max-width:800px){.hero-transition-overlay{top:calc(100% - 75px)!important;width:100%!important;}.welcome{padding:clamp(130px,23vw,190px) 1.2rem 2.7rem!important;}}
+@media(max-width:560px){.hero-transition-overlay{top:calc(100% - 55px)!important;width:100%!important;}.welcome{padding:125px 1rem 2.5rem!important;}}
