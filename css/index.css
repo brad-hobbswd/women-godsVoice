@@ -436,3 +436,9 @@
 
 /* Gold divider is transparent: only the decorative gold rails and star remain */
 .section-transition-divider{background:transparent!important;background-color:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;}
+
+
+/* Lift the standalone divider onto the parchment so no plum band appears behind it */
+.section-transition-divider{transform:translateY(-42px)!important;margin-top:0!important;background:transparent!important;background-color:transparent!important;}
+@media(max-width:800px){.section-transition-divider{transform:translateY(-34px)!important;}}
+@media(max-width:560px){.section-transition-divider{transform:translateY(-26px)!important;}}
