@@ -46,3 +46,5 @@
 .welcome-inner{top:78px!important;padding:0 1rem!important;}
 .journey{padding:260px 1rem 2.5rem!important;}
 }
+/* Remove the separator at the hero-overlay-to-Journey seam */
+.journey{border-top:0!important;outline:0!important;box-shadow:none!important;}
