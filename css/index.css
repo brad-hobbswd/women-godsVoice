@@ -510,3 +510,7 @@
 @media(max-width:1100px){body section#about-study.about-study{background:#e8d5bd url('../images/0187441F-B398-46CF-8924-9C7F621B6E18.png') center center/cover no-repeat!important;}}
 @media(max-width:800px){body section#about-study.about-study{background-image:url('../images/0187441F-B398-46CF-8924-9C7F621B6E18.png')!important;background-position:center center!important;background-size:cover!important;background-repeat:no-repeat!important;}}
 @media(max-width:560px){body section#about-study.about-study{background-position:center center!important;background-size:cover!important;}}
+
+
+/* Keep the portrait background adjustment out of tablet landscape */
+@media(max-width:1100px) and (orientation:landscape){body section#about-study.about-study{background:linear-gradient(rgba(247,235,221,.12),rgba(247,235,221,.12)),url('../images/0187441F-B398-46CF-8924-9C7F621B6E18.png') center/cover no-repeat!important;}}
