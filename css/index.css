@@ -324,3 +324,18 @@
  .journey .section-heading h2{color:var(--plum)!important;}
  .journey .week-grid{position:relative!important;z-index:2!important;}
 }
+
+
+/* FORCE tablet/mobile journey heading upward; override prior transition rules */
+@media(max-width:1100px){
+ body #journey .journey-inner>.section-heading{transform:translateY(-180px)!important;position:relative!important;z-index:30!important;}
+ body #journey .journey-inner>.week-grid{margin-top:-115px!important;position:relative!important;z-index:2!important;}
+}
+@media(max-width:800px){
+ body #journey .journey-inner>.section-heading{transform:translateY(-150px)!important;}
+ body #journey .journey-inner>.week-grid{margin-top:-95px!important;}
+}
+@media(max-width:560px){
+ body #journey .journey-inner>.section-heading{transform:translateY(-125px)!important;}
+ body #journey .journey-inner>.week-grid{margin-top:-80px!important;}
+}
