@@ -611,5 +611,5 @@
   body .independent-gold-transition.section-transition-divider{transform:translateY(27px)!important;}
 }
 @media (min-width:561px) and (max-width:1300px) and (orientation:landscape){
-  body .independent-gold-transition.section-transition-divider{top:47px!important;transform:none!important;}
+  body .independent-gold-transition.section-transition-divider{top:37px!important;transform:none!important;}
 }
