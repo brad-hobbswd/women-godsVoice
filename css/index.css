@@ -486,7 +486,7 @@
 
 /* Lower the Seven-Week Journey section heading group on responsive screens */
 @media(max-width:1100px){.journey-inner>.section-heading{transform:translateY(18px)!important;}}
-@media(max-width:800px){.journey-inner>.section-heading{transform:translateY(22px)!important;}}
+@media(max-width:800px){.journey-inner>.section-heading{transform:translateY(42px)!important;}}
 @media(max-width:560px){.journey-inner>.section-heading{transform:translateY(26px)!important;}}
 
 
@@ -608,7 +608,7 @@
 
 /* Tablet divider positioning: target the standalone divider with higher specificity */
 @media (min-width:561px) and (max-width:1100px) and (orientation:portrait){
-  body .independent-gold-transition.section-transition-divider{transform:translateY(12px)!important;}
+  body .independent-gold-transition.section-transition-divider{transform:translateY(32px)!important;}
 }
 @media (min-width:561px) and (max-width:1100px) and (orientation:landscape){
   body .independent-gold-transition.section-transition-divider{transform:translateY(22px)!important;}
