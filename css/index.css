@@ -606,10 +606,10 @@
 @media(max-width:560px){.independent-gold-transition{margin:.6rem auto .8rem!important;gap:.25rem!important;font-size:1.2rem!important;}.independent-gold-transition::before,.independent-gold-transition::after{height:8px!important;}}
 
 
-/* Tablet divider positioning */
+/* Tablet divider positioning: target the standalone divider with higher specificity */
 @media (min-width:561px) and (max-width:1100px) and (orientation:portrait){
-  .independent-gold-transition{transform:translateY(12px)!important;}
+  body .independent-gold-transition.section-transition-divider{transform:translateY(12px)!important;}
 }
 @media (min-width:561px) and (max-width:1100px) and (orientation:landscape){
-  .independent-gold-transition{transform:translateY(22px)!important;}
+  body .independent-gold-transition.section-transition-divider{transform:translateY(22px)!important;}
 }
