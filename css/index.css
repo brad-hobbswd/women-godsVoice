@@ -608,8 +608,8 @@
 
 /* Tablet divider positioning: target the standalone divider with higher specificity */
 @media (min-width:561px) and (max-width:1100px) and (orientation:portrait){
-  body .independent-gold-transition.section-transition-divider{transform:translateY(32px)!important;}
+  body .independent-gold-transition.section-transition-divider{transform:translateY(27px)!important;}
 }
-@media (min-width:561px) and (max-width:1100px) and (orientation:landscape){
-  body .independent-gold-transition.section-transition-divider{transform:translateY(22px)!important;}
+@media (min-width:561px) and (max-width:1300px) and (orientation:landscape){
+  body .independent-gold-transition.section-transition-divider{transform:translateY(62px)!important;}
 }
