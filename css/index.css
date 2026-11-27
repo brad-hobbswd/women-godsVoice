@@ -589,3 +589,9 @@
 @media(max-width:1100px) and (orientation:landscape){
   body .hero-transition-overlay{bottom:-265px!important;}
 }
+
+
+/* Revert gold transition bar to prior approved position */
+@media(max-width:1100px) and (orientation:landscape){
+  body .hero-transition-overlay{bottom:-250px!important;}
+}
