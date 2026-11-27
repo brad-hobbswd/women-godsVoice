@@ -575,3 +575,11 @@
   body #welcome .welcome-inner{transform:translateY(-18px)!important;}
   body .hero-transition-overlay{bottom:-260px!important;}
 }
+
+
+/* Fine-tune tablet landscape: ease welcome section back down and gold edge slightly higher */
+@media(max-width:1100px) and (orientation:landscape){
+  body #welcome{margin-top:-50px!important;}
+  body #welcome .welcome-inner{transform:translateY(-12px)!important;}
+  body .hero-transition-overlay{bottom:-250px!important;}
+}
