@@ -415,7 +415,7 @@
 /* Lower the welcome copy within the transition area */
 @media(max-width:1100px){.welcome-inner{transform:translateY(24px)!important;}}
 @media(max-width:800px){.welcome-inner{transform:translateY(28px)!important;}}
-@media(max-width:560px){.welcome-inner{transform:translateY(32px)!important;}}
+@media(max-width:560px){.welcome-inner{transform:translateY(27px)!important;}}
 
 
 /* Place the gold transition divider below the welcome copy */
