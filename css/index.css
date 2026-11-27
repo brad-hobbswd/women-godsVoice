@@ -486,7 +486,7 @@
 
 /* Lower the Seven-Week Journey section heading group on responsive screens */
 @media(max-width:1100px){.journey-inner>.section-heading{transform:translateY(18px)!important;}}
-@media(max-width:800px){.journey-inner>.section-heading{transform:translateY(62px)!important;}}
+@media(max-width:800px){.journey-inner>.section-heading{transform:translateY(47px)!important;}}
 @media(max-width:560px){.journey-inner>.section-heading{transform:translateY(26px)!important;}}
 
 
