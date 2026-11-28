@@ -1,0 +1,6 @@
+/* Week 1 palette and identity */
+:root{--week-bg:#f6eadb;--week-ink:#352a27;--week-accent:#b58a45;--week-deep:#32182d;--week-light:#fffaf4;--week-tone:#e7d3b5}
+.week-hero{background:radial-gradient(ellipse at 20% 10%,#b58a4540,transparent 45%),linear-gradient(135deg,#32182d,#32182d 55%,#b58a4580)}
+.week-content{background:#fffaf4}
+.week-kicker{color:#e7d3b5}
+.week-hero-ornament{color:#b58a45}
