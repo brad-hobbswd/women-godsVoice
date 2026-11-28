@@ -1,0 +1,6 @@
+/* Week 6 palette and identity */
+:root{--week-bg:#e8edf3;--week-ink:#2c3440;--week-accent:#7994b3;--week-deep:#28394b;--week-light:#f8fbff;--week-tone:#cdd9e7}
+.week-hero{background:radial-gradient(ellipse at 20% 10%,#7994b340,transparent 45%),linear-gradient(135deg,#28394b,#28394b 55%,#7994b380)}
+.week-content{background:#f8fbff}
+.week-kicker{color:#cdd9e7}
+.week-hero-ornament{color:#7994b3}
