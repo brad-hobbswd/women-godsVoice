@@ -613,3 +613,10 @@
 @media (min-width:561px) and (max-width:1300px) and (orientation:landscape){
   body .independent-gold-transition.section-transition-divider{top:37px!important;transform:none!important;}
 }
+
+
+/* Final site-title correction and tablet-landscape CTA lift */
+.brand-name{font-size:clamp(1rem,1.25vw,1.35rem)!important;letter-spacing:.045em!important;}
+@media (min-width:561px) and (max-width:1100px) and (orientation:landscape){
+  body .hero-actions-strip{bottom:clamp(60px,8vw,92px)!important;}
+}
