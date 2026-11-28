@@ -1,0 +1,6 @@
+/* Week 7 palette and identity */
+:root{--week-bg:#f2e4df;--week-ink:#382820;--week-accent:#b68a52;--week-deep:#512c26;--week-light:#fff9f5;--week-tone:#e2c7b4}
+.week-hero{background:radial-gradient(ellipse at 20% 10%,#b68a5240,transparent 45%),linear-gradient(135deg,#512c26,#512c26 55%,#b68a5280)}
+.week-content{background:#fff9f5}
+.week-kicker{color:#e2c7b4}
+.week-hero-ornament{color:#b68a52}
